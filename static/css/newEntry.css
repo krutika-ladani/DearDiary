@@ -41,12 +41,11 @@
 #text
 {
     width:96%;
-    height:52vh;
+    min-height: 500px;
     padding:4px 7px;
     margin: auto;
     border: none;
     font-size: 17px;
-    overflow:visible;
     font-family:'Roboto', sans-serif;
     line-height: 23px;
 }
@@ -57,14 +56,18 @@
     border-radius: 5px;
     padding:2px 20px 25px 20px;
     background-color: rgb(231, 210, 252);
-    border: 3px solid rgb(145, 108, 179);
-    color: rgb(0, 0, 0);
+    border: 3px solid rgb(185, 160, 207);
+    color:rgb(127, 93, 156);
     font-family:'Roboto', sans-serif;
     font-size: 20px;
 }
 input:hover, textarea:hover
 {
     outline: 2px solid rgb(204, 137, 12);
+}
+textarea:focus, input:focus
+{
+    outline: none;
 }
 .sub:hover
 {

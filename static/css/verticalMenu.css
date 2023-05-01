@@ -17,23 +17,13 @@
     background: none;
     border: none;
 }
-#hMenu
+.hMenu
 {
     display: inline-block;
     width:75vw;
     vertical-align: middle;
     text-align: center;
     height:100%;
-}
-#vMenu
-{
-    display: none;
-    position:fixed;
-    top:50px;
-    right: 0px;
-    background-color: rgb(77, 38, 114);
-    border: 2px solid rgb(49, 25, 71);
-    z-index: 1;
 }
 .menu 
 {
@@ -72,9 +62,19 @@
 }
 @media (max-width: 750px) 
 {
-    #hMenu
+    
+    .vMenu
     {
-        display:none;
+        display: none;
+        position:fixed;
+        top:50px;
+        height: fit-content;
+        width: fit-content;
+        right: 0px;
+        text-align: center;
+        background-color: rgb(77, 38, 114);
+        border: 2px solid rgb(49, 25, 71);
+        z-index: 1;
     }
     .but
     {
