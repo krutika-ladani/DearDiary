@@ -1,2 +1,2 @@
 # DearDiary
-DearDiary: a personal online journal
+A personal online journal
