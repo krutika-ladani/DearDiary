@@ -1,0 +1,91 @@
+.material-symbols-outlined 
+{
+    font-variation-settings:
+   'FILL' 0,
+   'wght' 400,
+   'GRAD' 0,
+  ' opsz' 48;
+   font-size: 35px;
+   vertical-align: middle;
+   color:white;
+}
+.but
+{
+    display:none;
+    position:fixed;
+    right:10px;
+    background: none;
+    border: none;
+}
+#hMenu
+{
+    display: inline-block;
+    width:75vw;
+    vertical-align: middle;
+    text-align: center;
+    height:100%;
+}
+#vMenu
+{
+    display: none;
+    position:fixed;
+    top:50px;
+    right: 0px;
+    background-color: rgb(77, 38, 114);
+    border: 2px solid rgb(49, 25, 71);
+    z-index: 1;
+}
+.menu 
+{
+    text-align: center;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+  
+.menu-item 
+{
+    display: inline-block;
+    width:15vw;
+    height:100%;
+    min-width: 80px;
+    font-size:24px;
+}
+.menu-item a
+{
+    position: relative;
+    top: 14%;
+    text-decoration: none;
+    color: white;
+}
+.current
+{
+    background-color: rgb(151, 119, 179);
+}
+.menu-item:hover
+{
+    background-color: rgb(111, 78, 145);
+}
+.current:hover
+{
+    background-color: rgb(151, 119, 179);
+}
+@media (max-width: 750px) 
+{
+    #hMenu
+    {
+        display:none;
+    }
+    .but
+    {
+        display:inline;
+    }
+    .menu-item
+    {
+        display:block;
+        width: 120px;
+        border: 2px solid rgb(49, 25, 71);
+        padding:20px 10px;
+        text-align: right;
+    }
+}

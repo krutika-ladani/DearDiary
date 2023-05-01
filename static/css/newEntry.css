@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:wght@200&display=swap');
+.outer
+{
+    position: relative;
+    top:60px;
+    margin: auto;
+    margin-top: 20px;
+    width:80%;
+    max-width: 700px;
+    padding: 2vw 3vw 2vw;
+    border: 3px solid rgb(77, 38, 114);
+}
+.details
+{
+    padding: 7px 0px;
+    height: max-content;
+    border-bottom: 2px solid rgba(144, 77, 207, 0.5);
+}
+.entry
+{
+    padding: 10px 0px;
+}
+#title
+{
+    border: none;
+    width: 100%;
+    background-color: rgb(245, 235, 255);
+    text-align: center;
+    font-family: 'Roboto Serif', serif;
+    font-size: 45px;
+}
+#date
+{
+    border: none;
+    padding:0px 7px;
+    height: 34px;
+    background-color: rgb(245, 235, 255);
+    font-size: 20px;
+    font-family: 'Roboto Serif', serif;
+}
+#text
+{
+    width:96%;
+    height:52vh;
+    padding:4px 7px;
+    margin: auto;
+    border: none;
+    font-size: 17px;
+    overflow:visible;
+    font-family:'Roboto', sans-serif;
+    line-height: 23px;
+}
+.sub
+{
+    float: right;
+    height:2px;
+    border-radius: 5px;
+    padding:2px 20px 25px 20px;
+    background-color: rgb(231, 210, 252);
+    border: 3px solid rgb(145, 108, 179);
+    color: rgb(0, 0, 0);
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+}
+input:hover, textarea:hover
+{
+    outline: 2px solid rgb(204, 137, 12);
+}
+.sub:hover
+{
+    outline: none;
+    color: white;
+    background-color:rgb(77, 38, 114);
+    border-color: rgb(77, 38, 114);
+}
+@media (max-width: 370px)
+{
+    #title
+    {
+        font-size: 30px;
+    }
+    #date
+    {
+        padding:0px 3px;
+        height: 25px;
+        letter-spacing: 1px;
+        font-size: 13px;
+        vertical-align: middle;
+    }
+    .sub
+    {
+        height:2px;
+        padding:1px 11px 20px 11px;
+        font-size: 15px;
+        vertical-align: middle;
+    }
+}

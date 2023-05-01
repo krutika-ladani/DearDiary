@@ -1,0 +1,56 @@
+h2
+{
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    width:80vw;
+    text-align: center;
+    color:rgb(77, 38, 114);
+    font-size: 20px;
+}
+p
+{
+    width:80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:15px;
+    text-align: center;
+}
+#frm
+{
+    margin:auto;
+    width:fit-content;
+}
+label
+{
+    font-size:20px;
+}
+.inp
+{
+    padding:10px 20px;
+    color: rgb(77, 38, 114,0.5);
+}
+input
+{
+    width:auto;
+    height: 25px;
+    padding:2px 10px;
+    border-color: rgb(77, 38, 114,0.5);
+    font-size:15px;
+}
+.sub
+{
+    height:35px;
+    border-radius: 5px;
+    padding:5px 30px 30px 30px;
+    margin-top: 10px;
+    background-color: rgb(77, 38, 114);
+    color:white;
+    font-size: 20px;
+}
+.sub:hover
+{
+    background-color: rgb(116, 74, 155);
+    border:3px solid rgb(77, 38, 114);
+}

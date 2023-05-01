@@ -1,0 +1,34 @@
+    body
+    {
+        height:100%;
+        width:100%;
+        margin:0%;
+        padding: 0%;
+        z-index: 0.5;
+    }
+    #header
+    {
+        position: fixed;
+        top:3px;
+        height:40px;
+        width:100%;
+        padding:3px 4vw;
+        background-color: rgb(77, 38, 114);
+        z-index: 1;
+
+    }
+    #header img
+    {
+        border-radius: 5px;
+        height: 100%;
+        width: auto;
+        vertical-align:middle;
+    }
+    p
+    {
+        font-family: 'Roboto Serif', serif;
+        font-size: 20px;
+        font-weight: 1px;
+        line-height: 25px;
+        margin:auto;
+    }

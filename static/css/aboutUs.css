@@ -1,0 +1,18 @@
+h2
+{
+    font-size: 40px;
+    margin: 0vw 5vw 0vw 5vw;
+    color:rgb(77, 38, 114);
+}
+p
+{
+    font-size: 20px;
+    margin: 5vw;
+    margin-top: 3vw;
+}
+.abt
+{
+    position:relative;
+    top:40px;
+    margin-top: 10vw;
+}
