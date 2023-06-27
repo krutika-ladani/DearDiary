@@ -1,12 +1,12 @@
 h2
 {
     margin: auto;
-    margin-top: 130px;
+    margin-top: 100px;
     margin-bottom: 30px;
     width:80vw;
     text-align: center;
     color:rgb(77, 38, 114);
-    font-size: 20px;
+    font-size: 22px;
 }
 p
 {
@@ -14,7 +14,7 @@ p
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size:15px;
+    font-size:17px;
     text-align: center;
 }
 #frm
@@ -53,4 +53,9 @@ input
 {
     background-color: rgb(116, 74, 155);
     border:3px solid rgb(77, 38, 114);
+}
+.warning
+{
+    color:red;
+    font-size: 16px;
 }

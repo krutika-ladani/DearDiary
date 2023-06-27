@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE.php>
+.php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <script src="../static/js/verticalMenu.js"></script>
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/verticalMenu.css">
-    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/viewEntry.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         .material-symbols-outlined 
@@ -22,20 +22,20 @@
 
 
     <div id="header">
-        <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.html')">
+        <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.php')">
         <div class="hMenu vMenu">
             <ul class="menu">
-                <li class="menu-item current" >
-                    <a href="home.html">Home</a>
+                <li class="menu-item" >
+                    <a href="home.php">Home</a>
                 </li>
-                <li class="menu-item">    
-                    <a href="myProfile.html">My Profile</a>
-                </li>
-                <li class="menu-item">
-                    <a href="aboutUs.html">About Us</a>
+                <li class="menu-item current">    
+                    <a href="myProfile.php">My Profile</a>
                 </li>
                 <li class="menu-item">
-                    <a href="aboutUs.html">Contact Us</a>
+                    <a href="aboutUs.php">About Us</a>
+                </li>
+                <li class="menu-item">
+                    <a href="aboutUs.php">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -47,14 +47,10 @@
     </div>
 
     <div class="outer">
-        <p>Heyy buddy! How was your day today?</p>
-        <img src="journal.png" alt="person writing journal" align="center">
-        <br>
-        <a href="newEntry.html">New Entry</a>
-        <a href="viewEntry.html" style="margin-right:0px">View Entry</a>
+    
     </div>
     
 
     
 </body>
-</html>
+<.php>

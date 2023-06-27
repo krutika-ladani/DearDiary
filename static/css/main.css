@@ -32,3 +32,8 @@
         line-height: 25px;
         margin:auto;
     }
+    .warning
+{
+    color:red;
+    font-size: 30px;
+}

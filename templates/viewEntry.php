@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,20 +22,20 @@
 
 
     <div id="header">
-        <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.html')">
+        <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.php')">
         <div class="hMenu vMenu">
             <ul class="menu">
                 <li class="menu-item current" >
-                    <a href="home.html">Home</a>
+                    <a href="home.php">Home</a>
                 </li>
                 <li class="menu-item">    
-                    <a href="myProfile.html">My Profile</a>
+                    <a href="myProfile.php">My Profile</a>
                 </li>
                 <li class="menu-item">
-                    <a href="aboutUs.html">About Us</a>
+                    <a href="aboutUs.php">About Us</a>
                 </li>
                 <li class="menu-item">
-                    <a href="aboutUs.html">Contact Us</a>
+                    <a href="aboutUs.php">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -53,4 +53,4 @@
 
     
 </body>
-</html>
+</php>

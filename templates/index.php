@@ -21,8 +21,8 @@
         </p>
     
         <br>
-        <a href="loginPage.html">login</a>
-        <a href="signUpPage.html" style="margin-right:0px">sign up</a>
+        <a href="loginPage.php">login</a>
+        <a href="signUpPage.php" style="margin-right:0px">sign up</a>
     </div>
     
 </body>
