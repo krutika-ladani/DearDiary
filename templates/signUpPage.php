@@ -99,13 +99,13 @@
                     throw $e;   
                 }
             }
-            catch (Exception $e) 
+            catch(Exception $e) 
             {
-                // not a MySQL exception
-                echo "$e->getMessage()";
+                echo 'Message: ' .$e->getMessage();
             }
            
         }
+        
     ?>
     
 </body>

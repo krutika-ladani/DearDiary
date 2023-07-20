@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:wght@200&display=swap');
+
 .material-symbols-outlined 
 {
     font-variation-settings:
@@ -5,7 +7,7 @@
    'wght' 400,
    'GRAD' 0,
   ' opsz' 48;
-   font-size: 35px;
+   font-size: 25px;
    vertical-align: middle;
    color:white;
 }
@@ -20,10 +22,12 @@
 .hMenu
 {
     display: inline-block;
-    width:75vw;
+    width:60vw;
     vertical-align: middle;
     text-align: center;
     height:100%;
+    position: absolute;
+    right: 80px;
 }
 .menu 
 {
@@ -36,29 +40,35 @@
 .menu-item 
 {
     display: inline-block;
-    width:15vw;
-    height:100%;
+    width:10vw;
+    height:85%;
     min-width: 80px;
-    font-size:24px;
+    font-size:18px;
+    font-family:'Roboto', sans-serif;
 }
 .menu-item a
 {
     position: relative;
-    top: 14%;
+    top: 20%;
     text-decoration: none;
-    color: white;
+    color: rgb(183, 145, 209);
 }
 .current
 {
-    background-color: rgb(151, 119, 179);
+    background-color: rgb(77, 30, 121);
+}
+.current a
+{
+    color: rgb(250, 240, 255);
 }
 .menu-item:hover
 {
-    background-color: rgb(111, 78, 145);
+    background-color: rgb(62, 21, 102);
+    
 }
 .current:hover
 {
-    background-color: rgb(151, 119, 179);
+    background-color: rgb(77, 30, 121);
 }
 @media (max-width: 750px) 
 {
@@ -72,8 +82,8 @@
         width: fit-content;
         right: 0px;
         text-align: center;
-        background-color: rgb(77, 38, 114);
-        border: 2px solid rgb(49, 25, 71);
+        background-color: rgb(44, 9, 77);
+        border: 2px solid rgb(18, 1, 26);
         z-index: 1;
     }
     .but
@@ -84,7 +94,7 @@
     {
         display:block;
         width: 120px;
-        border: 2px solid rgb(49, 25, 71);
+        border: 2px solid rgb(4, 0, 7);
         padding:20px 10px;
         text-align: right;
     }

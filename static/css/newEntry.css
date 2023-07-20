@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:wght@200&display=swap');
+
 .outer
 {
-    position: relative;
-    top:60px;
     margin: auto;
-    margin-top: 20px;
-    width:80%;
-    max-width: 700px;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 800px;
     padding: 2vw 3vw 2vw;
     border: 3px solid rgb(77, 38, 114);
+}
+.warning
+{
+    color: red;
+    font-size: 21px;
+    margin-top: 90px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .details
 {
@@ -27,7 +34,9 @@
     background-color: rgb(245, 235, 255);
     text-align: center;
     font-family: 'Roboto Serif', serif;
-    font-size: 45px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0;
 }
 #date
 {
@@ -41,11 +50,11 @@
 #text
 {
     width:96%;
-    min-height: 500px;
+    min-height: 800px;
     padding:4px 7px;
     margin: auto;
     border: none;
-    font-size: 17px;
+    font-size: 19px;
     font-family:'Roboto', sans-serif;
     line-height: 23px;
 }
@@ -76,11 +85,13 @@ textarea:focus, input:focus
     background-color:rgb(77, 38, 114);
     border-color: rgb(77, 38, 114);
 }
-@media (max-width: 370px)
+@media (max-width: 400px)
 {
     #title
     {
-        font-size: 30px;
+        font-size: 14px;
+        overflow: auto;
+        font-weight: 700;
     }
     #date
     {
@@ -89,6 +100,10 @@ textarea:focus, input:focus
         letter-spacing: 1px;
         font-size: 13px;
         vertical-align: middle;
+    }
+    #text
+    {
+        font-size: 13px;
     }
     .sub
     {

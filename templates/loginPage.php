@@ -28,6 +28,9 @@
                 <label for="pswd"> password:</label><br>
                 <input type="password" name="pswd" id="pswd">
             </div>
+            <div class="forgotpswd">
+                <a href="forgotPswd.php" class="fp">forgot password?</a>
+            </div>
             <div class="inp" align="center">
                 <button type="button" class="sub" id="sub" onclick="validate()">login</button>
             </div>
@@ -86,10 +89,9 @@
             {
                 throw $e;   
             }
-            catch (Exception $e) 
+            catch(Exception $e) 
             {
-                // not a MySQL exception
-                echo "$e->getMessage()";
+                echo 'Message: ' .$e->getMessage();
             }
            
         }

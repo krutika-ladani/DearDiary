@@ -1,18 +1,63 @@
-h2
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:wght@200&display=swap');
+
+body
+{
+    height: 80vh;
+    background-image: url("about.jpg");
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.h2
 {
     font-size: 40px;
-    margin: 0vw 5vw 0vw 5vw;
+    margin: 0 2vw;
     color:rgb(77, 38, 114);
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
 }
 p
 {
-    font-size: 20px;
-    margin: 5vw;
-    margin-top: 3vw;
+    font-size: 16px;
+    width: 40%;
+    margin: 0 2vw;
+    font-family: 'Roboto Serif', serif;
 }
 .abt
 {
-    position:relative;
-    top:40px;
+    
     margin-top: 10vw;
+}
+@media (max-width: 1050px)
+{
+    body 
+    {
+        background-image: none;
+    }
+    p 
+    {
+
+        width: 95%;
+        margin: 3%;
+        margin-top: 0px;
+    }
+    .abt
+    {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 450px) 
+{
+    .h2 
+    {
+        margin-top: 60px;
+        font-size: 30px;
+    }
+    p 
+    {
+        font-size: 15px;
+        line-height: 18px;
+    }
 }

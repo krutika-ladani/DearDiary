@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:wght@200&display=swap');
 
     #info
     {
        position:relative;
        top:50px;
-       margin-top: 4vw;
+       margin-top: 20px;
        text-align: center;
        width:100vw;
+       font-family: 'Roboto Serif', serif;
     }
     p
     {
@@ -15,37 +17,39 @@
         font-size: 21px;
         font-weight: 1px;
         line-height: 27px;
-        color: rgb(92, 56, 2);
+        color: rgb(8, 0, 8);
     }
     a
     {
         display:inline-block;
-        width:60px;
-        border-radius: 5px;
+        width:90px;
+        padding: 5px 0;
+        border-radius: 10px;
         padding:8px 20px;
         margin-top:10px;
         margin-right: 10px;
-        background-color: rgb(77, 38, 114);
-        color:white;
+        background-color: rgb(44, 9, 77);
+        border: 5px solid rgb(255, 255, 255);
+        color:rgb(250, 222, 253);
         text-decoration: none;
         font-size: 20px;
     }
     #info img
     {
-        margin:0% 0% 14px 0%;
-        height:300px;
-        width:40%;
-        min-width: 270px;
+        width:30%;
+        min-width: 200px;
         height: auto;
     }
     p::first-letter
     {
-        font-size:70px;
-        letter-spacing: -12px;
+        font-size:50px;
+        letter-spacing: -8px;
         line-height: 0px;
     }
     #info a:hover
     {
-        background-color: rgb(116, 74, 155);
-        border:3px solid rgb(77, 38, 114);
+        color: white;
+        background-color: rgb(64, 19, 107);
+        border: 5px solid rgb(64, 19, 107);
+        font-size: 23px;
     }

@@ -14,7 +14,7 @@
         <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.html')">
     </div>
     <div id="info">
-        <img src="think.png" alt="girl writing journal">
+        <img src="first.jpg" alt="person writing journal">
 
         <p>
             Welcome to DearDiary, a personal online journal where you can express your thoughts, feelings, and experiences in a safe and private space. 

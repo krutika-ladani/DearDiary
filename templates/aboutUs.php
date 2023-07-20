@@ -34,7 +34,7 @@
                     <a href="aboutUs.php">About Us</a>
                 </li>
                 <li class="menu-item">
-                    <a href="aboutUs.php">Contact Us</a>
+                    <a href="contactUs.php">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -45,7 +45,7 @@
         </button>
     </div>
     <div class="abt">
-        <h2>About Us</h2>
+        <div class="h2">About Us</div>
     
         <p> 
             Our website is dedicated to helping individuals document their personal journeys and experiences, and to create a lasting record of their thoughts and reflections.

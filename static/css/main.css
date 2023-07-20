@@ -5,15 +5,16 @@
         margin:0%;
         padding: 0%;
         z-index: 0.5;
+        overflow-y: scroll;
     }
     #header
     {
         position: fixed;
-        top:3px;
+        top:0px;
         height:40px;
         width:100%;
         padding:3px 4vw;
-        background-color: rgb(77, 38, 114);
+        background-color: rgb(44, 9, 77);
         z-index: 1;
 
     }

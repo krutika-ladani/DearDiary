@@ -35,7 +35,7 @@
                     <a href="aboutUs.php">About Us</a>
                 </li>
                 <li class="menu-item">
-                    <a href="aboutUs.php">Contact Us</a>
+                    <a href="contactUs.php">Contact Us</a>
                 </li>
             </ul>
         </div>
