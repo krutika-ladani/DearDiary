@@ -16,19 +16,25 @@
     <div id="header">
         <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.html')">
     </div>
-    <h2>Forgot password?</h2>
-    <p>Enter your registered Email ID and we will send you the password via mail</p>
-    <p class="warning"></p>
-    <div id="frm">
-        <form action="forgotPswd.php" method="post">
-            <div class="inp">
-                <label for="email"> Email:</label><br>
-                <input type="email" id="email" name="email">
-            </div>
-            <div class="inp" align="center">
-                <input type="submit" class="sub" value="Send">
-            </div>
-        </form>
+   
+    
+    <div class="outer">
+        <p class="warning"><br><br></p>
+        <div id="frm" class="forgotpswdmain">
+            <a href="loginpage.php" class="logsign other" id="log">login</a>
+            <a href="signUpPage.php" class="logsign other" id="sign">signup</a>
+            <h2>Forgot password?</h2>
+            <p>Enter your registered Email ID and we will send you the password via mail</p>
+            <form action="forgotPswd.php" method="post">
+                <div class="inp">
+                    <label for="email"> Email:</label><br>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="inp" align="center">
+                    <input type="submit" class="sub" value="Send">
+                </div>
+            </form>
+        </div>
     </div>
 
     <?php
@@ -53,7 +59,7 @@
                     if($row = mysqli_fetch_assoc($result))
                     {
                         echo "<script>
-                                send_mail();
+                                send_mail($email, ".$row['pswd'].");
                             </script>";
                     } 
                     else

@@ -6,7 +6,7 @@
        top:50px;
        margin-top: 20px;
        text-align: center;
-       width:100vw;
+       width:98vw;
        font-family: 'Roboto Serif', serif;
     }
     p
@@ -14,7 +14,7 @@
         width:60%;
         max-width: 2500px;
         min-width: 200px;
-        font-size: 21px;
+        font-size: 19px;
         font-weight: 1px;
         line-height: 27px;
         color: rgb(8, 0, 8);
@@ -24,19 +24,19 @@
         display:inline-block;
         width:90px;
         padding: 5px 0;
-        border-radius: 10px;
         padding:8px 20px;
         margin-top:10px;
         margin-right: 10px;
         background-color: rgb(44, 9, 77);
         border: 5px solid rgb(255, 255, 255);
+        border-radius: 20px;
         color:rgb(250, 222, 253);
         text-decoration: none;
         font-size: 20px;
     }
     #info img
     {
-        width:30%;
+        width: 55%;
         min-width: 200px;
         height: auto;
     }
@@ -52,4 +52,21 @@
         background-color: rgb(64, 19, 107);
         border: 5px solid rgb(64, 19, 107);
         font-size: 23px;
+    }
+    @media (max-width: 380px)
+    {
+        p 
+        {
+            font-size: 16px;
+        }
+        a 
+        {
+            width: 80px;
+            font-size: 18px;
+            padding: 8px 5px;
+        }
+        #info a:hover 
+        {
+            font-size: 20px;
+        }
     }

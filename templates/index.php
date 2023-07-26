@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(isset($_SESSION['email']))
+    {
+        session_destroy();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +18,11 @@
     <title>DearDiary</title>
 </head>
 <body>
+    
     <div id="header">
         <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.html')">
     </div>
+
     <div id="info">
         <img src="first.jpg" alt="person writing journal">
 

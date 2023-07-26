@@ -14,28 +14,29 @@
     <div id="header">
         <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.html')">
     </div>
-    <h2>Enter the credentials:</h2>
-    <p>New User? <a href="signUpPage.php">sign up</a></p>
-    <p class="warning"></p>
-    
-    <div id="frm">
-        <form action="loginPage.php" method="post" id="loginform">
-            <div class="inp">
-                <label for="email"> Email:</label><br>
-                <input type="email" name="email" id="email" autocomplete="email">
-            </div>
-            <div class="inp">
-                <label for="pswd"> password:</label><br>
-                <input type="password" name="pswd" id="pswd">
-            </div>
-            <div class="forgotpswd">
-                <a href="forgotPswd.php" class="fp">forgot password?</a>
-            </div>
-            <div class="inp" align="center">
-                <button type="button" class="sub" id="sub" onclick="validate()">login</button>
-            </div>
 
-        </form>
+    <div class="outer">
+        <p class="warning"><br><br></p>
+        <div id="frm" class="loginmain">
+            <a href="#frm" class="logsign" id="log">login</a>
+            <a href="signUpPage.php" class="logsign other" id="sign">signup</a>
+            <form action="loginPage.php" method="post" id="loginform">
+                <div class="inp">
+                    <label for="email"> Email:</label><br>
+                    <input type="email" name="email" id="email" autocomplete="email">
+                </div>
+                <div class="inp">
+                    <label for="pswd"> password:</label><br>
+                    <input type="password" name="pswd" id="pswd">
+                </div>
+                <div class="forgotpswd">
+                    <a href="forgotPswd.php" class="fp">forgot password?</a>
+                </div>
+                <div class="inp" align="center">
+                    <button type="button" class="sub" id="sub" onclick="validate()">login</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <?php

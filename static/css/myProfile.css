@@ -1,36 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:wght@200&display=swap');
-
 body
 {
-    background-image: url("contact.jpg");
-    background-position: bottom left;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
+    height: 82vh;
 }
 .outer
 {
-    position: absolute;
-    right: 12%;
-    margin-top: 65px;
+    margin: auto;
+    margin-top: 80px;
 }
 .warning
 {
-    text-align: center;
     font-size: 18px;
-    margin-bottom: 8px;
-    font-family: 'Roboto Serif', serif;
+    text-align: center;
+    font-weight: 600;
 }
 .inner
 {
-    padding:20px 0;
+    padding: 15px 0;
+    margin: auto;
     width: 400px;
     height: 480px;
     background-color: rgb(190, 170, 236);
-    margin: auto;
 }
 form
 {
@@ -38,17 +28,12 @@ form
     margin: auto;
     font-family: 'Roboto Serif', serif;
 }
-h1
+.user
 {
-    text-align: center;
-}
-p
-{
-    font-size: 17px;
-    margin-bottom: 0px;
-    margin-top: 8px;
-    font-weight: 600;
-    font-family: 'Roboto Serif', serif;
+    display: block;
+    margin: auto;
+    width: 120px;
+    margin-top: 15px;
 }
 .field
 {
@@ -56,6 +41,7 @@ p
     width: 99%;
     padding: 5px 2%;
     margin: 10px 0;
+    margin-top: 1px;
     font-size: 16px;
     border: none;
     background-color: rgb(255, 255, 255);
@@ -67,6 +53,10 @@ p
     height: 100px;
     overflow-y: auto;
 }
+label
+{
+    color: rgb(70, 29, 109);
+}
 #sub
 {
     display: inline-block;
@@ -75,6 +65,7 @@ p
     width: 120px;
     padding: 7px 10px;
     font-size: 18px;
+    margin-top: 20px;
 }
 #sub:hover
 {
@@ -82,37 +73,13 @@ p
 }
 @media (max-width: 480px)
 {
-    body 
-    {
-        background-image: none;
-        height: 88vh;
-    }
-    .outer
-    {
-        width: 94vw;
-        margin: auto;
-        position: static;
-        margin-top: 75px;
-    }
     .inner
     {
         width: 100%;
-        height: 430px;
-    }
-    h1 
-    {
-        font-size: 22px;
-    }
-    p 
-    {
-        font-size: 14px;
-    }
-    .warning
-    {
-        font-size: 14px;
     }
     .field
     {
         font-size: 14px;
+        line-height: 17px;
     }
 }

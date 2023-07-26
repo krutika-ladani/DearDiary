@@ -1,5 +1,8 @@
-<!DOCTYPE.php>
-.php lang="en">
+<?php
+        session_start();
+?>
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,33 +22,13 @@
     </style>
 </head>
 <body>
+
     <?php
-        session_start();
+        require "navbar.php"
     ?>
-     <div id="header">
-        <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.php')">
-        <div class="hMenu vMenu">
-            <ul class="menu">
-                <li class="menu-item current" >
-                    <a href="home.php">Home</a>
-                </li>
-                <li class="menu-item">    
-                    <a href="myProfile.php">My Profile</a>
-                </li>
-                <li class="menu-item">
-                    <a href="aboutUs.php">About Us</a>
-                </li>
-                <li class="menu-item">
-                    <a href="aboutUs.php">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-        <button class="but" onclick="toggleMenu()">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </button>
-    </div>
+    <script>
+        document.getElementById("home").className="menu-item current";
+    </script>
 
     <div class="outer">
         <p>Heyy buddy! How was your day today?</p>
@@ -54,7 +37,6 @@
         <a href="newEntry.php">New Entry</a>
         <a href="viewEntry.php" style="margin-right:0px">View Entry</a>
     </div>
-    
-
-    
+        
 </body>
+</php>

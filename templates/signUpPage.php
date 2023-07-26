@@ -16,39 +16,35 @@
     <div id="header">
         <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.php')">
     </div>
-    <h2>To join our community enter the below given details:</h2>
-    <p>Already registered? <a href="loginPage.php">login</a></p>
-    <p class="warning"></p>
     
-    <div id="frm">
-        <form action="signUpPage.php" method="post" id="signupform">
-            <div class="inp">
-                <label for="name">name:</label><br>
-                <input type="text" name="name" id="name" autcomplete="name">
-            </div>
-            <div class="inp">
-                <label for="email"> Email:</label><br>
-                <input type="email" name="email" id="email" autocomplete="email">
-            </div>
-            <div class="inp">
-                <label for="pswd"> password:</label><br>
-                <input type="password" name="pswd" id="pswd">
-            </div>
-            <div class="inp">
-                <label for="cpswd">confirm password:</label><br>
-                <input type="password" name="cpswd" id="cpswd">
-            </div>
-            <div class="inp" align="center">
-                <button type="button" class="sub" id="sub" onclick="validate()">sign up</button>
-            </div>
-
-        </form>
+    <div class="outer">
+        <p class="warning"><br><br></p>
+        <div id="frm" class="signupmain">
+            <a href="loginPage.php" class="logsign other" id="log">login</a>
+            <a href="#frm" class="logsign" id="sign">signup</a>
+            <form action="signUpPage.php" method="post" id="signupform">
+                <div class="inp">
+                    <label for="email"> Email:</label><br>
+                    <input type="email" name="email" id="email" autocomplete="email">
+                </div>
+                <div class="inp">
+                    <label for="pswd"> password:</label><br>
+                    <input type="password" name="pswd" id="pswd">
+                </div>
+                <div class="inp">
+                    <label for="cpswd">confirm password:</label><br>
+                    <input type="password" name="cpswd" id="cpswd">
+                </div>
+                <div class="inp" align="center">
+                    <button type="button" class="sub" id="sub" onclick="validate()">sign up</button>
+                </div>
+            </form>
+        </div>
     </div>
     
     <?php
-        if(isset($_POST["name"]) && isset($_POST["email"])&& isset($_POST["pswd"])&& isset($_POST["cpswd"]))
+        if(isset($_POST["email"])&& isset($_POST["pswd"])&& isset($_POST["cpswd"]))
         {
-            $name = $_POST["name"];
             $email = $_POST["email"];
             $pswd = $_POST["pswd"];
             $cpswd = $_POST["cpswd"];
@@ -65,24 +61,35 @@
                 }
                 else
                 {
-                    $sql = "INSERT INTO login_credentials(uname,email,pswd) VALUES ('$name', '$email', '$pswd')";
+                    $sql = "INSERT INTO login_credentials(email,pswd) VALUES ('$email', '$pswd')";
                     $result = mysqli_query($conn, $sql);
-                    if($result)
-                    {
-                        session_start();
-                        $_SESSION["email"] = $email;
-                        mysqli_close($conn);
-                        header("Location: http://localhost/deardiary/templates/home.php");
-                        die();
-                    }
-                    else
+                    if(!$result)
                     {
                         echo "<script> 
                             var war=document.getElementsByClassName('warning')[0];
                             war.innerHTML='There is some problem from our side. Please try again after some time.';
-                        </script>";
+                        </script>";  
                     }
-                    
+                    else
+                    {
+                        $sql="INSERT INTO profile(email, fname, lname, age, gender) VALUES ('$email', '', '', null, '')";
+                        $result = mysqli_query($conn, $sql);
+                        if(!$result)
+                        {
+                            echo "<script> 
+                                var war=document.getElementsByClassName('warning')[0];
+                                war.innerHTML='There is some problem from our side. Please try again after some time.';
+                            </script>";
+                        }
+                        else
+                        {
+                            session_start();
+                            $_SESSION["email"] = $email;
+                            mysqli_close($conn);
+                            header("Location: http://localhost/deardiary/templates/home.php");
+                            die();
+                        }
+                    }
                 }
             } 
             catch (mysqli_sql_exception $e) 

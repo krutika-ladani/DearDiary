@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:wght@200&display=swap');
-
+body
+{
+    height: 80vh;
+}
 .outer
 {
     position: relative;
@@ -15,7 +18,7 @@ p
 {
     width:80%;
     max-width: 1000px;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto Serif', serif;
     font-size: 17px;
     line-height: 25px;
     margin-top:58px;
@@ -31,14 +34,27 @@ p
     margin:0px 2px;
     margin-top:15px;
     background-color: rgb(255, 255, 255);
-    border:3px solid rgb(77, 38, 114);
-    color:rgb(77, 38, 114);
+    border:3px solid rgb(44, 9, 77);
+    color:rgb(44, 9, 77);
     text-decoration: none;
     font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto Serif', serif;
     
 }
 .outer a:hover
 {
-    background-color: rgb(77, 38, 114);
+    background-color: rgb(44, 9, 77);
     color: white;
+}
+@media (max-width: 380px)
+{
+      .outer a
+      {
+        font-size: 17px;
+      }
+      .outer a 
+      {
+        height: 25px;
+      }
 }

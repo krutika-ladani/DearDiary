@@ -23,31 +23,13 @@
 </head>
 <body>
 
+    <?php
+        require "navbar.php"
+    ?>
+    <script>
+        document.getElementById("home").className="menu-item current";
+    </script>
 
-    <div id="header">
-        <img src="logo.png" alt="logo" onclick="window.location.assign('aboutUs.php')">
-        <div class="hMenu vMenu">
-            <ul class="menu">
-                <li class="menu-item current" >
-                    <a href="home.php">Home</a>
-                </li>
-                <li class="menu-item">    
-                    <a href="myProfile.php">My Profile</a>
-                </li>
-                <li class="menu-item">
-                    <a href="aboutUs.php">About Us</a>
-                </li>
-                <li class="menu-item">
-                    <a href="contactUs.php">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-        <button class="but" onclick="toggleMenu()">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </button>
-    </div>
     <h1>Previous Entries</h1>
     <div class="warning"></div>
 
