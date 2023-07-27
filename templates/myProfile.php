@@ -25,7 +25,7 @@
 
 
     <?php
-        require "navbar.php"
+        require "navbar.php";
     ?>
     <script>
         document.getElementById("profile").className="menu-item current";
@@ -130,8 +130,6 @@
                         </script>";
 
                         header("Refresh:0");
-
-                       
                     }
                     else
                     {

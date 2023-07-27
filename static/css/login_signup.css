@@ -7,7 +7,7 @@ body
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 85vh;
+    height: 90vh;
     margin: 0px;
     padding: 0px;
 }
@@ -24,7 +24,7 @@ p
 
     margin-top: 20px;
     width: 40%;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -24,7 +24,7 @@
 <body>
 
     <?php
-        require "navbar.php"
+        require "navbar.php";
     ?>
     <script>
         document.getElementById("home").className="menu-item current";

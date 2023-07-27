@@ -112,4 +112,9 @@ textarea:focus, input:focus
         font-size: 15px;
         vertical-align: middle;
     }
+    .outer
+    {
+        margin: auto;
+        width: 90%;
+    }
 }

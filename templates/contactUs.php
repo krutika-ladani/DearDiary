@@ -23,7 +23,7 @@
 <body>
 
     <?php
-        require "navbar.php"
+        require "navbar.php";
     ?>
     <script>
         document.getElementById("contact").className="menu-item current";
@@ -51,7 +51,13 @@
             $lname = $_POST["lname"];
             $email = $_POST["email"];
             $subject = $_POST["subject"];
+            $subject = str_replace('"', '\"', $subject);
+            $subject = str_replace("'", "\'", $subject);
+
             $content = $_POST["content"];
+            $content = str_replace('"', '\"', $content);
+            $content = str_replace("'", "\'", $content);
+            $content = str_replace("\r\n", "\\r\\n", $content);
 
             try
             {    

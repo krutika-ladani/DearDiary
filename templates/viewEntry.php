@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DearDiary</title>
+    <script src="../static/js/verticalMenu.js"></script>
     <script src="../static/js/viewEntry.js"></script>
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/verticalMenu.css">
@@ -24,7 +25,7 @@
 <body>
 
     <?php
-        require "navbar.php"
+        require "navbar.php";
     ?>
     <script>
         document.getElementById("home").className="menu-item current";

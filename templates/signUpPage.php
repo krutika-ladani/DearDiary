@@ -72,7 +72,7 @@
                     }
                     else
                     {
-                        $sql="INSERT INTO profile(email, fname, lname, age, gender) VALUES ('$email', '', '', null, '')";
+                        $sql="INSERT INTO profile(email, fname, lname, age, gender) VALUES ('$email', ' ', ' ', 0, ' ')";
                         $result = mysqli_query($conn, $sql);
                         if(!$result)
                         {

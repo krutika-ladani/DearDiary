@@ -110,4 +110,9 @@
         padding:20px 10px;
         text-align: right;
     }
+    .menu-item:hover
+    {
+        background-color: rgb(62, 21, 102);
+        
+    }
 }

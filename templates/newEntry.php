@@ -24,7 +24,7 @@
 <body>
 
     <?php
-        require "navbar.php"
+        require "navbar.php";
     ?>
     <script>
         document.getElementById("home").className="menu-item current";
@@ -38,7 +38,8 @@
                 <input type="text" name="title" id="title" placeholder="Entry Title" required>
             </div>
             <div class="details">
-                <input type="date" name="date" id="date" placeholder="DD-MM-YYYY" required><input type="submit" class="sub" value="save">
+            <div class="details">
+            <input type="date" name="date" id="date" required><input type="submit" class="sub" value="save">
             </div>
             <div class="entry">
                 <textarea name="text" id="text" placeholder="Write your entry here"></textarea>
@@ -51,16 +52,19 @@
         if(isset($_POST["title"]))
         {
             $title = $_POST["title"];
+            $title = str_replace('"', '\"', $title);
+            $title = str_replace("'", "\'", $title);
             $date = $_POST["date"];
-            $text = $_POST["text"];
             $email = $_SESSION["email"];
+            $content = $_POST["text"];
+            $content = str_replace('"', '\"', $content);
+            $content = str_replace("'", "\'", $content);
 
             try
             {    
                 $conn = mysqli_connect("127.0.0.1:4306", "root", "", "deardiary");
                 if(!$conn)
                 {
-                    echo 'hii';
                     die("<script> 
                             var war=document.getElementsByClassName('warning')[0];
                             war.innerHTML='There is some problem from our side. Please try again after some time.';
@@ -68,24 +72,19 @@
                 }
                 else
                 {
-                    echo "hiii";
-                    $sql = "INSERT INTO entries(email,e_date,title,content) VALUES('$email', '$date', '$title', '$text');";
-                    echo "hiii";
+                    $sql = "INSERT INTO entries(email, e_date, title, content) VALUES('$email', '$date', '$title', '$content')";
                     
                     if(mysqli_query($conn, $sql))
                     {
-                        echo "done";
                         echo "
                             <script>
-                                var war=document.getElementsByClassName('warning')[0];
-                                war.innerHTML='Saved successfully!';
-                                setTimeOut(function(war.innerHTML='';),20000)
+                                alert('Entry saved successfully!');
+                                window.location = 'http://localhost/deardiary/templates/viewEntry.php';
                             </script>
                         ";
                     }
                     else
                     {
-                        echo "else";
                         echo "<script>
                             var war=document.getElementsByClassName('warning')[0];
                             war.innerHTML='Entry could not be saved, please try again after some time!';
@@ -96,13 +95,10 @@
             } 
             catch (mysqli_sql_exception $e) 
             {
-                echo "in catch";
                 if (mysqli_errno($conn) == 1062) 
                 {
                         echo "<script> 
-                            var war=document.getElementsByClassName('warning')[0];
-                            war.innerHTML='Entry already exists!';
-                            setTimeOut(function(war.innerHTML='';),20000);
+                            alert('Entry already exists!');
                         </script>";
                 }
                 else

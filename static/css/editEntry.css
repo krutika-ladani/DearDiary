@@ -1,0 +1,21 @@
+#delete
+{
+    margin-right: 5px;
+}
+@media (max-width: 500px)
+{
+    .sub
+    {
+        max-width: fit-content;
+        font-size: 15px;
+        line-height: 25px;
+        padding-right: 2px;
+        padding-left: 2px;
+        padding-top: 0;
+    }
+    #date
+    {
+        width: 120px;
+        font-size: 12px;
+    }
+}
